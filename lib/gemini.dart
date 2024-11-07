@@ -14,6 +14,7 @@ class GeminiApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: OnBoardingScreen(),
       ),
     );

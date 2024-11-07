@@ -49,8 +49,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
           ),
           index == 2
               ? Positioned(
-                  bottom: 30,
-                  right: MediaQuery.of(context).size.width / 5,
+                  bottom: 25.h,
+                  right: MediaQuery.of(context).size.width / 4.w,
                   child: TextButton(
                     onPressed: () {
                       Navigator.of(context).push(
@@ -59,8 +59,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                       );
                     },
                     child: Container(
-                      width: 200.w,
-                      height: 50.h,
+                      width: 150.w,
+                      height: 40.h,
                       decoration: BoxDecoration(
                         shape: BoxShape.rectangle,
                         borderRadius: BorderRadius.circular(30),
@@ -70,16 +70,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         child: Text(
                           "Start",
                           style:
-                              TextStyle(color: Colors.white, fontSize: 27.sp),
+                              TextStyle(color: Colors.white, fontSize: 24.sp),
                         ),
                       ),
                     ),
                   ),
                 )
               : Positioned(
-                  bottom: 90,
+                  bottom: 30,
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20.w),
+                    padding: EdgeInsets.symmetric(horizontal: 18.w),
                     child: Row(
                       children: [
                         GestureDetector(
@@ -90,7 +90,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             );
                           },
                           child: Container(
-                            width: 100.w,
+                            width: 90.w,
                             height: 40.h,
                             decoration: BoxDecoration(
                               shape: BoxShape.rectangle,
@@ -103,7 +103,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 24),
+                                    fontSize: 18),
                               ),
                             ),
                           ),
@@ -124,7 +124,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                             }
                           },
                           child: Container(
-                            width: 100.w,
+                            width: 90.w,
                             height: 40.h,
                             // clipBehavior: Clip.hardEdge,
                             decoration: BoxDecoration(
@@ -138,7 +138,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
-                                    fontSize: 24),
+                                    fontSize: 18),
                               ),
                             ),
                           ),
